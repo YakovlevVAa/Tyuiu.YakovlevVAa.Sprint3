@@ -10,7 +10,7 @@ namespace Tyuiu.YakovlevVAa.Sprint3.Task1.V13.Lib
             int k = 1;
             while (k <= 7)
             {
-                p *= Math.Pow(1.0 / (k * (1.0 / n)), -1);
+                p *= Math.Pow(1.0 / Math.Pow(n, k), -1);
                 k++; 
             }
             return Math.Round(p, 3);
