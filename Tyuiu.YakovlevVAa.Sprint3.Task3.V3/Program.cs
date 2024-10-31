@@ -1,5 +1,5 @@
-﻿using Tyuiu.YakovlevVAa.Sprint3.Task2.V6.Lib;
-namespace Tyuiu.YakovlevVAa.Sprint3.Task2.V6
+﻿using Tyuiu.YakovlevVAa.Sprint3.Task3.V3.Lib;
+namespace Tyuiu.YakovlevVAa.Sprint3.Task3.V3
 {
     internal class Program
     {
@@ -10,28 +10,23 @@ namespace Tyuiu.YakovlevVAa.Sprint3.Task2.V6
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #3                                                               *");
             Console.WriteLine("* Тема: Оператор цикла for                                                *");
-            Console.WriteLine("* Задание #2                                                              *");
-            Console.WriteLine("* Вариант #6                                                              *");
+            Console.WriteLine("* Задание #3                                                              *");
+            Console.WriteLine("* Вариант #3                                                              *");
             Console.WriteLine("* Выполнил: Яковлев Виктор Александрович | ИИПб-24-2                      *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу используя цикл do...while, которая вычисляет         *");
-            Console.WriteLine("* произведение ряда по формуле, при a=0,25                                *");
+            Console.WriteLine("* Используя цикл foreach подсчитать минимальное количество букв f,        *");
+            Console.WriteLine("* находящихся на соседних позициях в строке: cvbmzff orffgtrr dkfvfffdr   *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
-            double a; int startValue; int stopValue;
-            startValue = 1;
-            stopValue = 7;
-            a = 0.25;
-            Console.WriteLine("a =" + a);
-            Console.WriteLine("Старт шага =" + startValue);
-            Console.WriteLine("Конец шага =" + stopValue);
+            string str = "cvbmzff orffgtrr dkfvfffdr";
+            char c = 'f';
+            Console.WriteLine("Строка =" + str);
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("Произведение ряда = "+ds.GetMultiplySeries(a, startValue, stopValue));
+            Console.WriteLine(ds.GetMinCharCount(str, c));
         }
     }
-  
 }
