@@ -25,10 +25,12 @@ namespace Tyuiu.YakovlevVAa.Sprint3.Task0.V12
             stopValue = 13;
             t = 1;
             Console.WriteLine("t =" + t);
+            Console.WriteLine("Старт шага =" + startValue);
+            Console.WriteLine("Конец шага =" + stopValue);
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine(ds.GetMultiplySeries(t,startValue,stopValue));
+            Console.WriteLine("Произведение ряда = " + ds.GetMultiplySeries(t, startValue, stopValue));
         }
     }
 }
